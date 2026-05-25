@@ -1,7 +1,7 @@
 extends Area2D
 class_name Pickup
 
-const BLINK_ENABLED_SHADER_PARAMETER := &"blink"
+const BLINK_ENABLED_SHADER_PARAMETER := &"blink_enabled"
 
 # 当前掉落物使用的配置资源
 @export var config: PickupConfig

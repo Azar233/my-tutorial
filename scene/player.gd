@@ -278,7 +278,6 @@ func _update_armed_effect() -> void:
 	if armed_effect_sprite.sprite_frames.has_animation("&default"):
 		armed_effect_sprite.play("&default")
 	
-
 # 将二维vec映射为四方动画
 func _vector_to_facing_suffix(direction: Vector2) -> StringName:
 	if abs(direction.x) >= abs(direction.y):
