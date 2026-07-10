@@ -394,7 +394,6 @@ func _spawn_dropped_pickup(pickup_config: PickupConfig, spawn_position: Vector2)
 	drop_parent.add_child(pickup_instance)
 	pickup_instance.global_position = spawn_position	
 	
-
 # 死亡动画结束后销毁敌人实例
 func _on_animated_sprite_animation_finished() -> void:
 	if not is_dead:

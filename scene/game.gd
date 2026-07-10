@@ -133,7 +133,7 @@ func _update_time_bar() -> void:
 	if stage_duration > 0.0:
 		fill_ratio = clampf(stage_time_left / stage_duration, 0.0, 1.0)
 	
-	time_bar.scale.x = time_bar_full_sale_x
+	time_bar.scale.x = time_bar_full_sale_x * fill_ratio
 	
 	if not time_bar.centered:
 		time_bar.position.x = time_bar_left_edge_x
